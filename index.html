@@ -28,6 +28,10 @@
 <body>
 
 	<nav>
+		<nav class="navbar" id=navbar-resume>
+  				<button type="button" class="ml-auto" id="btn-resume"><a class="navbar-brand text-dark" href="https://drive.google.com/file/d/1w65AjSPiksNwQZmNQp5MogNbgdlYke2R/view?usp=sharing" target="_blank">Résumé</a></button>
+		</nav>
+
 
 	</nav>
 
@@ -59,20 +63,42 @@
 	<div class="container showcase"><!-- start container 1 for header-->
 
 				
-					<div class="row">
-						<h1 class="h1 sm-lg-1">Jeru Baldia <span class="text-muted">is</span></h1>
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-12">				
+						<h1 class="text-left">Jeru Baldia <span class="text-muted">is</span></h1>
 					</div><!-- end row heading -->
+				</div>
 
-					<div class="row">
-						<video class="sm-lg-1" autoplay="autoplay" loop="loop" width="400" height="300">
-						<source src="assets/images/1cip.mp4" type="video/mp4" />
+				<div class="row">
+					<div class="col-lg-12" id="port-video">
+						<video autoplay="autoplay" loop="loop" width="300" height="200">
+						<source src="assets/images/cip.mp4" type="video/mp4"/></video>
 					</div><!-- end video row -->
+				</div>
 
-					<div class="row">						
-						<small class="h3 sm-lg-1">Full Stack Web Developer</small>
-					</div><!-- end heading row 2 -->				
+				<div class="row">
+					<div class="col-lg-12">						
+						<h4 class="text-left">Full Stack Web Developer</h4>
+					</div>					
+				</div><!-- end heading row 2 -->				
+				
+			</div>
+
+			<div class="col-lg-4">
+				<div class="row">
+					<div class="col-lg-5">
+						<img id="port-pic" src="assets/images/jeru-1.jpg">
+					</div>
+					<div class="col-lg-7">
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</div><!-- end of container -->
+
 
 	<div class="container row showcase"><!-- start card container 2 for links-->
 
@@ -80,9 +106,10 @@
 		<div class="card-deck col-lg-8">
   			
   			<div class="card">    			
-    			<iframe class="card-img-top link-container" src="../capstone1/index.html" frameborder="0" scrolling="no"></iframe>
-    			<div class="card-body">
-      				<h5 class="card-title"><a href="../capstone1/index.html">Capstone 1</a></h5>  				
+    			<iframe class="card-img-top link-container" src="https://jerud3v.github.io/overthewaves" frameborder="0" scrolling="no">
+    			</iframe>
+    			<div class="card-body" id="card-title-style">
+      				<h5 class="card-title" ><a href="https://jerud3v.github.io/overthewaves" target="_blank">Capstone 1 | Over The Waves</a></h5>  				
     			</div><!-- end card-body -->
 
     			<div class="card-footer">
@@ -90,7 +117,7 @@
     			</div><!-- end card-footer -->
   			</div><!-- end card -->
 
-  			<!-- start of capstone 2 and 3 card
+  			<!-- reserved for capstone 2 and 3 card
   			<div class="card">
     			<img class="card-img-top" src=".../100px180/" alt="Card image cap">
     			<div class="card-body">
@@ -114,16 +141,17 @@
   			</div>	this is a comment end card
 		</div> this is a comment end card-deck links -->
 
-		<div class="col-lg-4">
-			<img src="assets/images/lm.png" class="img-fluid piclogo">
-			<img src="assets/images/html.png" class="img-fluid piclogo">
-			<img src="assets/images/css.png" class="img-fluid piclogo">	
-			<img src="assets/images/gh.png" class="img-fluid piclogo">
-			<img src="assets/images/gl.png" class="img-fluid piclogo">
-			<img src="assets/images/sb.png" class="img-fluid piclogo">
-			<img src="assets/images/bs.png" class="img-fluid piclogo">
-			<img src="assets/images/emm.png" class="img-fluid piclogo">
-		</div><!-- end col-lg-6 for icons -->
+			<div class="col-lg-4">
+				<img src="assets/images/lm.png" class="img-fluid piclogo">
+				<img src="assets/images/html.png" class="img-fluid piclogo">
+				<img src="assets/images/css.png" class="img-fluid piclogo">	
+				<img src="assets/images/gh.png" class="img-fluid piclogo">
+				<img src="assets/images/gl.png" class="img-fluid piclogo">
+				<img src="assets/images/sb.png" class="img-fluid piclogo">
+				<img src="assets/images/bs.png" class="img-fluid piclogo">			
+			</div><!-- end col-lg-6 for icons -->
+		</div>
+
 
 
 

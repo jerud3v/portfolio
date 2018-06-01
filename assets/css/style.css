@@ -9,14 +9,46 @@
 	src: url(../fonts/adam.otf);
 }
 
+#navbar-resume { 
+  background-color: #2D2B27; 
+}
+
+#btn-resume {
+  background-color: #BCC6CC;
+  padding: 0 0;
+  width: 5em;
+  height: 3em;
+  border-radius:10px; 
+}
+
+#port-pic {
+  border-radius: 125px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+
 .showcase {
   width: auto;
-  height: 430px;
+  height: auto;
   margin-bottom: 50px;
 }
 
 #footshow {
   margin-bottom: 0;
+}
+
+#card-title-style {
+  background-color: #2D2B27;
+  font: white;
+}
+
+a:hover {
+  text-decoration: none;  
+}
+
+a {
+  color: white;
 }
 
 
@@ -57,7 +89,7 @@ footer {
 
 
 
-/*copy/paste start here*/
+/*floating button starts here*/
 
 body{
   font-family: 'Roboto';
@@ -361,17 +393,47 @@ body{
 /*media queries*/
 
 
-/*// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+  #port-video {
+    padding: 0 0;
+  }
+ 
+}
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+  #port-video {
+    padding: 0 0;
+  }
+
+ }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+  #port-video {
+    padding: 0 0;
+  }
+
+ }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+  #port-video {
+    padding: 0 0;
+  }
+
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }*/
+@media (min-width: 1200px) { 
+
+  #port-video {
+      padding: 0 0;
+    }
+
+ }
