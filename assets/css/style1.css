@@ -1,0 +1,25 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-y: hidden:
+}
+
+.remark
+{
+	padding: 5px !important;
+}
+
+.remark p
+{
+	color: #000;
+	background-color: #b84a4b;
+}
+
+/*#cssImg
+{
+	height: 190px; 
+	width: 150px;
+	padding-left: 10px;
+}*/
