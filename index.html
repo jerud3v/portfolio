@@ -2,11 +2,16 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<!-- favicon -->
+	<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
 
 <!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald:600|Ubuntu:700" rel="stylesheet">
@@ -15,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- Local CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 <!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -26,116 +31,350 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-light bg-light">
-		<div class="mr-auto">
-			<!-- <img id="photo" src="assets/images/jeru-1.jpg"> -->
+	<nav>		
+		<div class="nav justify-content-center">
+			<ul class="nav nav-tabs" role="tablist">
+
+				<li class="nav-item">
+					<a data-toggle="tab" role="tab" class="nav-link active" href="#Home">Home</a>					
+				</li>
+
+				<li class="nav-item">
+					<a data-toggle="tab" role="tab" class="nav-link" href="#Works">Works</a>					
+				</li>
+
+				<li class="nav-item">
+					<a data-toggle="tab" role="tab" class="nav-link" href="#Tools">Tools</a>
+				</li>
+					
+
+				<li class="nav-item">
+					<a data-toggle="tab" role="tab" class="nav-link" href="#AboutMe">About Me</a>
+				</li>
+			</ul>	
+		</div>
+	</nav>
+
+	<div class="tab-content">	
+
+		<div class="container tab-pane fade show active" role=tabpanel" id="Home">
+
+			<div>
+				<h1>Jeru Baldia</h1>
+			</div>
+			
+			<div class="container">
+				<h4><span class="txt-rotate" data-period="1500" data-rotate='[ "Competitive.", "Innovative.", "Proficient."]'></span></h4>
+			</div>
+
+			<div>
+				<h3>Full Stack Web Developer</h3>
+			</div>
+
 		</div>
 
-		<div class="ml-auto">
-			<button class="btn btn-dark" id="myworks"><i class="fas fa-code"></i></button>
-			<button class="btn btn-dark" id="tools"><i class="fas fa-keyboard"></i></button>
-			<button class="btn btn-dark" id="aboutme"><i class="far fa-user-circle"></i></button>
-		</div>
-	</nav>	
 
-	<div class="container">
+		<div class="container tab-pane fade" role=tabpanel" id="Works">
+			<div class="row">
+				<div class="col-lg-4 mt-5">
+					<h5 class="card-title"><a href="#">Over the waves</a></h5>
+					<div class="card" id="caps1">
+						<img class="card-img-top" src="assets/images/capstone1.png">
+						<div class="card-img-overlay d-none" id="caps1ol">
+							<div class="card-body">
+						   		<h6 class="card-text">Capstone 1 Project</h6>
+						   		<p class="card-text">Community based blog sharing about living and enjoying the sea and ocean.</p>
+						  	</div>
+						</div>
+					</div>
+				</div>
 
-		<div>
-			<h1>Jeru Baldia</h1>
-		</div>
-		
-		<div class="container" style="height: 100%;">
-			<h4><span class="txt-rotate" data-period="1500" data-rotate='[ "Competitive.", "Innovative.", "Proficient."]'></span></h5>
+				<div class="col-lg-4 mt-5">
+					<h5 class="card-title"><a href="#">Chains and Pedals</a></h5>
+					<div class="card" id="caps2">
+						<img class="card-img-top" src="assets/images/capstone2.png">
+						<div class="card-img-overlay d-none" id="caps2ol">
+							<div class="card-body">
+						   		<h6 class="card-text">Capstone 2 Project</h6>
+						   		<p class="card-text">The company was established to provide quality bikes and parts that will best suit your needs. The company aims to provide good quality service espacially after sales services.</p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 mt-5">
+					<h5 class="card-title"><a href="#">AJM Training Center Phils</a></h5>
+					<div class="card" id="caps3">
+						<img class="card-img-top" src="assets/images/capstone3.png">
+						<div class="card-img-overlay d-none" id="caps3ol">
+							<div class="card-body">
+						   		<h6 class="card-text">Capstone 3 project</h6>					    	
+						   		<p class="card-text">The company is strictly following the IMO Standards with the up-to-date course outline ensuring that their trainees are fully equiped with knowledge that is very useful while they are onboard the vessel. The company's vision and mission is to provide quality education to seafarers in a very affordable and reasonable training fees.</p>
+						  	</div>
+						</div>
+					</div>
+				</div>
+
+			</div>	
 		</div>
 
-		<div>
-			<h3>Full Stack Developer</h3>
+		<div class="container tab-pane fade" role=tabpanel" id="Tools">	
+			<div class="d-none d-lg-block"><!-- LG only -->
+				<div class="row">
+					<div class="col-lg-4">
+						<nav class="left-border">
+							<h3>Frontend</h3>
+						</nav>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<img class="img-fluid" src="https://s3.amazonaws.com/images.seroundtable.com/HTML5-Logo-128-1332419244.png" align="right" width="128" height="128" alt="HTML5">
+							</div>
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" alt="CSS3 logo and wordmark" src="assets/images/css3.png">
+							</div>
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-lg-6"></div>
+							<div class="col-lg-6">
+								<img width="128" height="128" class="img-fluid" src="assets/images/b.png">
+							</div>							
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-lg-6"></div>
+							<div class="col-lg-6">
+								<img width="128" height="128" class="img-fluid" src="assets/images/js.jpg">
+							</div>							
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-lg-6"></div>
+							<div class="col-lg-6">
+								<img width="128" height="128" class="img-fluid" src="assets/images/jquery.png">
+							</div>							
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<nav>
+							<h3>Backend</h3>
+						</nav>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/php7.png">
+							</div>
+
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/db.png">
+							</div>
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/laravel.png">								
+							</div>
+
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/mysql.png">
+							</div>
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-lg-6">
+								
+							</div>
+
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/mariadb.png">
+							</div>
+						</div>
+						
+						<div class="row mt-2">
+							<div class="col-lg-6">
+								
+							</div>
+
+							<div class="col-lg-6">
+							</div>
+						</div>	
+					</div>
+
+					<div class="col-lg-4">
+						<nav class="right-border">
+							<h3>System Tools</h3>
+						</nav>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/windows.png">								
+							</div>
+
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/ubuntu.jpeg">								
+							</div>							
+						</div>
+						
+						<div class="row mt-2">
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/google.png">								
+							</div>
+
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/sublimetext.png">								
+							</div>							
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/stackoverflow.png">								
+							</div>
+
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/gitlab.png">								
+							</div>							
+						</div>
+
+						<div class="row mt-2">
+							<div class="col-lg-6">
+																
+							</div>
+
+							<div class="col-lg-6">
+								<img width="128" class="img-fluid" src="assets/images/github.png">								
+							</div>							
+						</div>			
+					</div>
+				</div>
+			</div>
+
+			<div class="d-md-block d-sm-block d-lg-none"><!-- MD to lower only -->
+				<div class="row">
+					<div class="col-lg-4">
+						<nav>
+							<h3>Frontend</h3>
+						</nav>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><h6>HTML 5</h6></li>
+							<li class="list-group-item"><h6>CSS 3</h6></li>
+							<li class="list-group-item"><h6>Bootstrap 4.1.3</h6></li>
+							<li class="list-group-item"><h6>Javascript</h6></li>
+							<li class="list-group-item"><h6>jQuery</h6></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4">
+						<nav>
+							<h3>Backend</h3>
+						</nav>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><h6>PHP 7</h6></li>
+							<li class="list-group-item"><h6>My SQL</h6></li>
+							<li class="list-group-item"><h6>Maria DB</h6></li>
+							<li class="list-group-item"><h6>Laraval</h6></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4">
+						<nav>
+							<h3>System Tools</h3>
+						</nav>
+
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><h6>Windows</h6></li>
+							<li class="list-group-item"><h6>Linux | Ubuntu</h6></li>
+							<li class="list-group-item"><h6>Google</h6></li>
+							<li class="list-group-item"><h6>Stack Overflow</h6></li>
+							<li class="list-group-item"><h6>Sublime Text 3</h6></li>
+							<li class="list-group-item"><h6>GitLab | Branching</h6></li>
+							<li class="list-group-item"><h6>GitHub | Branching</h6></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+						
 		</div>
 
-		<div id="myworksDisplay" class="container">
+		<div class="tab-pane fade" role=tabpanel" id="AboutMe">	
+
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="card">
-							<div class="card-img-top embed-responsive embed-responsive-4by3">
-								<iframe class="embed-responsive-item" src="https://jerud3v.github.io/overthewaves/"></iframe>
-							</div>
+						<div>
+							<img id="photo" class="img-fluid" src="assets/images/jeru-1.jpg">
+						</div>
 
-							<div class="card-body">
-								<h6 class="card-title text-dark">Capstone 1</h6>
-								<p class="card-text"><a class="text-muted" href="https://jerud3v.github.io/overthewaves/">Over the Waves</a></p>
-							</div>
-							
+						<div class="container mt-5">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href="mailto:jerud3v@gmail.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+								</li>
+
+								<li class="list-inline-item ml-3">
+									<a href="#" target="_blank"><i class="fas fa-paperclip fa-2x"></i> <em>Résumé</em></a>
+								</li>
+									
+								<!-- <li class="list-inline-item">
+									<a href="https://gitlab.com/jerud3v" target="_blank"><i class="fab fa-gitlab fa-2x"></i></a>
+								</li>
+
+								<li class="list-inline-item">
+									<a href="https://github.com/jerud3v" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+								</li> -->
+							</ul>
+								
+							<div class="container">							
+								<a href="tel:+639234234427"><span>+63923 423 4427</span></a>	
+							</div>									
 						</div>
 					</div>
 
-					<div class="col-lg-4">
-						<div class="card">
-							<div class="card-img-top embed-responsive embed-responsive-4by3">
-								<iframe class="embed-responsive-item" src="https://chainsandpedals.000webhostapp.com/"></iframe>
-							</div>
-
-							<div class="card-body">
-								<h6 class="card-title text-dark">Capstone 1</h6>
-								<p class="card-text"><a class="text-muted" href="https://chainsandpedals.000webhostapp.com/">Chains and Pedals</a></p>
-							</div>
-							
-						</div>
-						<!--  -->
-					</div>
-
-					<div class="col-lg-4">
-						<!-- <iframe src="https://ajmtcphils.000webhostapp.com/"></iframe> -->
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="toolsDisplay" class="">
-			toolsDisplay
-		</div>
-
-		<div id="aboutmeDisplay" class="">
-			<div class="container">
-				<p>Seafarer turned Full Stack Web Developer. New to this profession, but can assure clients that I can comply to all the necessary requirements for building their website. I am also a team player and I am confident enough to work and cooperate with other Web Developers.</p>
-			</div>
-		</div>
-
-		<div class="container">
-
-
-			
-		</div>
-
-		
-			<div class="row">
-
-				<div class="col-lg-1">
-					<a href="mailto:jerud3v@gmail.com" target="_blank"><i class="far fa-envelope fa-2x text-muted"></i></a>
+					<div class="col-lg-8 mt-5">
+						<p class="text-justify" id="aboutP">I am a Seafarer turned Full Stack Web Developer. Although I am new to this profession, I can perform all the necessary requirements for building static or dynamic website in semantic manner. I am also a team player and I am confident enough to work and cooperate with other Web Developers.</p>
+					</div>		
+						
 				</div>
 
 				
-				<div class="col-lg-1">
-					<a href="https://gitlab.com/jerud3v" target="_blank"><i class="fab fa-gitlab fa-2x text-muted"></i></a>
-				</div>
-				
-				<div class="col-lg-1">
-					<a href="https://github.com/jerud3v" target="_blank"><i class="fab fa-github fa-2x text-muted"></i></a>
-				</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>	
+					
 				
 			</div>
-		
-
-	</div>
-
+		</div>
+	</div><!-- end tabpanel -->
 
 
 
-<!-- Bootstrap CDN JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- jQuery CDN JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap CDN JS -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 <!-- Local JS	 -->
 	<script type="text/javascript" src="assets/js/js.js"></script>
 </body>

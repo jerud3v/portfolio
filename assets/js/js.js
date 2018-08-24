@@ -51,7 +51,7 @@ window.onload = function() {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #a3a3a3 }";
   document.body.appendChild(css);
 };
 
@@ -59,30 +59,18 @@ window.onload = function() {
 $(document).ready(function()
 {
 
-  $('#myworksDisplay').load('index.html', function() {
-      $(this).hide();
-    });
+  $("#caps1").hover(function()
+  {
+    $("#caps1ol").toggleClass("d-none");      
+  });
 
-  $('#toolsDisplay').load('index.html', function() {
-      $(this).hide();
-    });
+  $("#caps2").hover(function()
+  {
+    $("#caps2ol").toggleClass("d-none");      
+  });
 
-  $('#aboutmeDisplay').load('index.html', function() {
-      $(this).hide();
-    });
-
-  $("#myworks").click(function()
-    {
-      $("#myworksDisplay").toggle();
-    });
-
-  $("#tools").click(function()
-    {
-      $("#toolsDisplay").toggle();
-    });
-
-  $("#aboutme").click(function()
-    {
-      $("#aboutmeDisplay").toggle();
-    });
+  $("#caps3").hover(function()
+  {
+    $("#caps3ol").toggleClass("d-none");      
+  });
 });
