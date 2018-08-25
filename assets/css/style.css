@@ -35,7 +35,7 @@ nav > h3
 	text-align: center;
 }
 
-a i
+a i, a
 {
 	color: #F8985A;
 }
@@ -43,6 +43,7 @@ a i
 a:hover
 {
 	text-decoration: none;
+	color: #f9f9f9;
 }
 
 .card
@@ -72,7 +73,7 @@ a:hover
 	color: #f9f9f9;
 }
 
-a[class="active"]
+a[class="nav-link active show"], a[class="nav-link active"]
 {
 	background-color: #F8985A !important;
 	color: #f9f9f9;
@@ -80,7 +81,6 @@ a[class="active"]
 
 #photo
 {
-	/*border-radius: 30px 30px 30px 30px;*/
 	border-top-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 }
@@ -96,11 +96,6 @@ body > div
 {
 	text-indent: 50px;
 	font-size: 1.5rem;
-}
-
-p.card-text
-{
-	text-indent: 50px;
 }
 
 .card-img-top
